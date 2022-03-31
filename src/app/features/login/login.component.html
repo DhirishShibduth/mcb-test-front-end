@@ -1,0 +1,54 @@
+<!--<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <div class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button [routerLink]="['/homepage']">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </div>
+  </div>
+</div>-->
+
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+
+<mat-card class="form-container">
+  <mat-card-title>
+    <img src="assets/img/MCB-Logo.png">
+    Login
+  </mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="loginFrom" (ngSubmit)="login()">
+
+      <label for="username">Username</label>
+      <input type="text" placeholder="Username" id="username" formControlName="username">
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password" formControlName="password">
+
+      <div class="button">
+        <button type="submit" [disabled]="!loginFrom.valid">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+              </svg>
+            </div>
+          </div>
+          <span>Sign In</span>
+        </button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>

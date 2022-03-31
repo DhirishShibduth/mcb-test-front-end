@@ -1,0 +1,66 @@
+<div id="root">
+  <div class="container pt-5">
+    <h1 class="title">Accounts Overview</h1>
+    <div class="row align-items-stretch">
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Account Number<svg
+            class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
+            </path>
+          </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count account-number">000684558921</span>
+        </div>
+      </div>
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Savings Account<svg
+            class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
+            </path>
+          </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">MUR 10,500</span>
+        </div>
+      </div>
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Last Inward Transfer<svg
+            class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
+            </path>
+          </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">MUR 500</span><span
+          class="hind-font caption-12 c-dashboardInfo__subInfo">From: Mauritius Commercial Bank</span>
+        </div>
+      </div>
+      <div class="c-dashboardInfo col-lg-3 col-md-6">
+        <div class="wrap">
+          <h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Last Outward Transfer<svg
+            class="MuiSvgIcon-root-19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
+            </path>
+          </svg></h4><span class="hind-font caption-12 c-dashboardInfo__count">MUR 8600</span><span
+          class="hind-font caption-12 c-dashboardInfo__subInfo">To: Mau Cas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5">
+  <h1 class="title">Transaction</h1>
+  <div class="row align-items-stretch">
+    <div class="col-md-6 col-sm-12 my-2">
+      <button mat-raised-button [routerLink]="['new-bank-transaction']" class="w-100"><mat-icon>compare_arrows</mat-icon> New Transaction</button>
+    </div>
+    <div class="col-md-6 col-sm-12 my-2">
+      <button mat-raised-button [routerLink]="['list-submitted-transactions']" class="w-100">	<mat-icon>receipt</mat-icon> View Submitted Transactions</button>
+    </div>
+  </div>
+</div>
+

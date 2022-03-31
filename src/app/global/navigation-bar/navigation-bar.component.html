@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <img class="logo" src="assets/img/MCB-Logo.png" [routerLink]="['/homepage']">
+  <span class="example-spacer"></span>
+
+  <nav class="large-screen-nav">
+    <button mat-menu-item [routerLink]="['/homepage']">Home</button>
+    <button mat-menu-item [routerLink]="['new-bank-transaction']">Customer Form</button>
+    <button mat-menu-item [routerLink]="['list-submitted-transactions']">Table</button>
+    <label>User 1</label>
+    <button mat-button [matMenuTriggerFor]="menu" class="profile-btn"><mat-icon>person</mat-icon></button>
+  </nav>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item><mat-icon>person</mat-icon>Profile</button>
+    <button mat-menu-item [routerLink]="['/login']"><mat-icon>power_settings_new</mat-icon>Logout</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="smallScreenMenu" class="smallScreenMenu"><mat-icon>menu</mat-icon></button>
+  <mat-menu #smallScreenMenu="matMenu">
+    <button mat-menu-item [routerLink]="['/homepage']"><mat-icon>home</mat-icon>Home</button>
+    <button mat-menu-item [routerLink]="['new-bank-transaction']"><mat-icon>notes</mat-icon>Customer Form</button>
+    <button mat-menu-item [routerLink]="['list-submitted-transactions']"><mat-icon>table_chart</mat-icon>Table</button>
+    <button mat-menu-item><mat-icon>person</mat-icon>Profile</button>
+    <button mat-menu-item [routerLink]="['/login']"><mat-icon>power_settings_new</mat-icon>Logout</button>
+    <label class="smallScreenUserName">User 1</label>
+  </mat-menu>
+</mat-toolbar>

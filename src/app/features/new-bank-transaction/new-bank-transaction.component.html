@@ -1,0 +1,124 @@
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+
+<div class="new-transaction-container p-5" [formGroup]="newBankForm" >
+  <h1>New Bank Transaction</h1>
+  <div class="row form-container my-5">
+    <div class="col-12 mt-2 mb-3 px-4">
+      <div>
+        <mat-radio-group formControlName="options">
+          <mat-radio-button value="new" class="mx-2">New</mat-radio-button>
+          <mat-radio-button value="existing" class="mx-2">Existing</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Reference</mat-label>
+        <input matInput formControlName="reference">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Customer Number</mat-label>
+        <input (change)="prefill()" matInput formControlName="customerNumber">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Customer Name</mat-label>
+        <input matInput formControlName="customerName">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Customer Address</mat-label>
+        <input matInput formControlName="customerAddress">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Customer Phone Number</mat-label>
+        <input matInput type="phone" formControlName="customerPhone">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Transfer Amount</mat-label>
+        <input matInput type="phone" formControlName="transferAmount">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Transfer Currency</mat-label>
+        <mat-select formControlName="transferCurrency">
+          <mat-option value="mur">AED</mat-option>
+          <mat-option value="zar">EUR</mat-option>
+          <mat-option value="usd">CHF</mat-option>
+          <mat-option value="mur">MUR</mat-option>
+          <mat-option value="zar">USD</mat-option>
+        </mat-select>
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Beneficiary Bank</mat-label>
+        <input matInput type="text" formControlName="beneficiaryBank">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Beneficiary Account Number</mat-label>
+        <input matInput type="text" formControlName="beneficiaryAccNo">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Payment Details</mat-label>
+        <input matInput type="text" formControlName="paymentDetails">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Credit/Debit Card Details</mat-label>
+        <input matInput type="text" formControlName="creditDebitDetails">
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6 col-sm-12 my-2 px-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Region</mat-label>
+        <mat-select formControlName="region">
+          <mat-option value="port-louis">Port-Louis</mat-option>
+          <mat-option value="curepipe">Curepipe</mat-option>
+          <mat-option value="vacoas">Vacoas</mat-option>
+          <mat-option value="port-mathurin">Port Mathurin</mat-option>
+        </mat-select>
+        <mat-hint align="end">This field is required</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="col-12 mt-3 px-4 text-end">
+      <button (click)="submitNewBankTransaction()" type="button" mat-flat-button class="submit-btn" [disabled]="!newBankForm.valid"><mat-icon>send</mat-icon> Submit</button>
+    </div>
+  </div>
+</div>

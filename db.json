@@ -1,0 +1,44 @@
+{
+  "customer": [
+    {
+      "options": "Existing",
+      "reference": "CUS202201032345",
+      "customerNumber": "123456785434",
+      "customerName": "Roberto Salasez",
+      "customerAddress": "Rue Royal Port Louis",
+      "customerPhone": "2345789",
+      "transferAmount": "12,340",
+      "transferCurrency": "MUR",
+      "beneficiaryBank": "MCB",
+      "beneficiaryAccNo": "3245325342",
+      "paymentDetails": "Return",
+      "creditDebitDetails": "352465346654",
+      "region": "Vacoas"
+    },
+    {
+      "options": "NEW",
+      "reference": "CUS202201034567",
+      "customerNumber": "576564756567",
+      "customerName": "Ramsey Gordon",
+      "customerAddress": "Johnstone Road, London",
+      "customerPhone": "56785676",
+      "transferAmount": "13,400",
+      "transferCurrency": "AED",
+      "beneficiaryBank": "MCB",
+      "beneficiaryAccNo": "74676678",
+      "paymentDetails": "Debt",
+      "creditDebitDetails": "657865876786",
+      "region": "Port-Louis"
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "pass@123"
+    },
+    {
+      "username": "normalUser",
+      "password": "pass@123"
+    }
+  ]
+}

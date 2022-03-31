@@ -1,0 +1,73 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 70px;
+}
+
+mat-toolbar{
+  button{
+    border: none;
+    background: transparent;
+    display: flex;
+  }
+  .logo{
+    height: 65px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .profile-btn{
+    border-radius: 50%;
+    background: #ca1323;
+    color: white;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+
+  label{
+    font-size: 15px;
+    color: #ca1323;
+    margin: 0 15px;
+    align-self: center;
+  }
+}
+
+.large-screen-nav{
+  margin-right: 15px;
+  display: flex;
+}
+
+button.mat-menu-item {
+  width: auto;
+  color: #585858;
+  font-weight: 500;
+}
+
+.smallScreenUserName{
+  padding-left: 18px;
+  font-weight: 500;
+  color: #ca1323;
+  width: 100%;
+}
+
+@media only screen and (max-width: 575px) {
+  .large-screen-nav{
+    display: none!important;
+  }
+  .smallScreenMenu{
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .large-screen-nav{
+    display: flex;
+  }
+  .smallScreenMenu{
+    display: none!important;
+  }
+}
