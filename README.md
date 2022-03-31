@@ -9,12 +9,10 @@ Run `json-server --watch db.json` for json server. Navigate to `http://localhost
 ## Login
 
 `Username:` admin
-
 `Password:` pass@123
 
 
 `Username:` normalUser
-
 `Password:` pass@123
 
 
