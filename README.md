@@ -1,15 +1,20 @@
 ## Development server
 
 Run `npm start` for a dev server and json server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files and any POST and GET Method will be saved and be retrieved from db.json.
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 Run `json-server --watch db.json` for json server. Navigate to `http://localhost:3000/`.
 
 ## Login
 
 `Username:` admin
+
 `Password:` pass@123
 
+
 `Username:` normalUser
+
 `Password:` pass@123
 
 
