@@ -25,6 +25,13 @@ const routes: Routes = [
           import('../list-submitted-transactions/list-submitted-transactions.module').then(
             (m) => m.ListSubmittedTransactionsModule
           ),
+      },
+      {
+        path: 'multi-form',
+        loadChildren: () =>
+          import('../multi-form/multi-form.module').then(
+            (m) => m.MultiFormModule
+          ),
       }]
   }
 ];

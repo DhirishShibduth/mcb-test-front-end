@@ -5,6 +5,7 @@
   <nav class="large-screen-nav">
     <button mat-menu-item [routerLink]="['/homepage']">Home</button>
     <button mat-menu-item [routerLink]="['new-bank-transaction']">Customer Form</button>
+    <button mat-menu-item [routerLink]="['multi-form']">Multi Form</button>
     <button mat-menu-item [routerLink]="['list-submitted-transactions']">Table</button>
     <label>User 1</label>
     <button mat-button [matMenuTriggerFor]="menu" class="profile-btn"><mat-icon>person</mat-icon></button>
@@ -17,6 +18,7 @@
   <mat-menu #smallScreenMenu="matMenu">
     <button mat-menu-item [routerLink]="['/homepage']"><mat-icon>home</mat-icon>Home</button>
     <button mat-menu-item [routerLink]="['new-bank-transaction']"><mat-icon>notes</mat-icon>Customer Form</button>
+    <button mat-menu-item [routerLink]="['multi-form']"><mat-icon>table_chart</mat-icon>Multi Form</button>
     <button mat-menu-item [routerLink]="['list-submitted-transactions']"><mat-icon>table_chart</mat-icon>Table</button>
     <button mat-menu-item><mat-icon>person</mat-icon>Profile</button>
     <button mat-menu-item [routerLink]="['/login']"><mat-icon>power_settings_new</mat-icon>Logout</button>
